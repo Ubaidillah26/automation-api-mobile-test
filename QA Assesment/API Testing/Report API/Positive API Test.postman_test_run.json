@@ -1,0 +1,196 @@
+{
+	"id": "909e2629-8fe9-443e-8986-46436aec2d15",
+	"name": "Positive API Test",
+	"timestamp": "2024-03-04T04:45:28.899Z",
+	"collection_id": "0-0abec389-9a27-408e-a151-43dfe70d16dc",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 10,
+	"totalFail": 3,
+	"results": [
+		{
+			"id": "2b2c6e0b-4b03-4bc9-a925-3b308d87f5b2",
+			"name": "Add User",
+			"url": "https://gorest.co.in/public/v2/users",
+			"time": 177,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true,
+				"Response time is less than 1000ms": true,
+				"Verify response headers have expected values": true,
+				"response matches JSON schema": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify response headers have expected values": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response matches JSON schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				177
+			],
+			"allTests": [
+				{
+					"Successful POST request": true,
+					"Response time is less than 1000ms": true,
+					"Verify response headers have expected values": true,
+					"response matches JSON schema": true
+				}
+			]
+		},
+		{
+			"id": "2fb2ea94-abaa-4b26-96e8-2d5bd14cad40",
+			"name": "User Detail",
+			"url": "https://gorest.co.in/public/v2/users/5986507",
+			"time": 136,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 1000ms": true,
+				"Status code is 200": false,
+				"Verify response headers have expected values": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Verify response headers have expected values": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				136
+			],
+			"allTests": [
+				{
+					"Response time is less than 1000ms": true,
+					"Status code is 200": false,
+					"Verify response headers have expected values": true
+				}
+			]
+		},
+		{
+			"id": "3fe77272-d74f-449f-89b7-eba1a692a5f2",
+			"name": "Update User",
+			"url": "https://gorest.co.in/public/v2/users/5986507",
+			"time": 123,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Verify response headers have expected values": true,
+				"Response time is less than 1000ms": true,
+				"response matches JSON schema": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Verify response headers have expected values": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response matches JSON schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				123
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Verify response headers have expected values": true,
+					"Response time is less than 1000ms": true,
+					"response matches JSON schema": true
+				}
+			]
+		},
+		{
+			"id": "838e1532-b3c9-44b3-8e58-86fba43b4723",
+			"name": "Delete User",
+			"url": "https://gorest.co.in/public/v2/users/5986507",
+			"time": 115,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is 204": false,
+				"Response time is less than 1000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				115
+			],
+			"allTests": [
+				{
+					"Status code is 204": false,
+					"Response time is less than 1000ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 551,
+	"collection": {
+		"requests": [
+			{
+				"id": "2b2c6e0b-4b03-4bc9-a925-3b308d87f5b2",
+				"method": "POST"
+			},
+			{
+				"id": "2fb2ea94-abaa-4b26-96e8-2d5bd14cad40",
+				"method": "GET"
+			},
+			{
+				"id": "3fe77272-d74f-449f-89b7-eba1a692a5f2",
+				"method": "PUT"
+			},
+			{
+				"id": "838e1532-b3c9-44b3-8e58-86fba43b4723",
+				"method": "DELETE"
+			}
+		]
+	}
+}
